@@ -1,49 +1,60 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>nz.ac.auckland</groupId>
-    <artifactId>uoa-parent</artifactId>
-    <version>1.8</version>
-  </parent>
-  <groupId>nz.ac.auckland.composite</groupId>
-  <artifactId>composite-jetty</artifactId>
-  <packaging>jar</packaging>
-  <name>composite-jetty</name>
-  <version>2.3-SNAPSHOT</version>
-  <description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>nz.ac.auckland.groupapps.parent</groupId>
+        <artifactId>parent-groupapps-central</artifactId>
+        <version>1.1</version>
+    </parent>
+
+    <groupId>nz.ac.auckland.composite</groupId>
+    <artifactId>composite-jetty</artifactId>
+    <version>2.3-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>composite-jetty</name>
+
+    <description>
         Puts all of the Jetty dependencies in one place for reuse by the different artifacts.
     </description>
-  <properties>
-    <jetty.version>9.0.0.v20130308</jetty.version>
-  </properties>
-  <dependencies>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-server</artifactId>
-      <version>${jetty.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-jsp</artifactId>
-      <version>${jetty.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-servlet</artifactId>
-      <version>${jetty.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-webapp</artifactId>
-      <version>${jetty.version}</version>
-    </dependency>
-      <!--
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-annotations</artifactId>
-      <version>${jetty.version}</version>
-    </dependency>
-    -->
-  </dependencies>
+
+    <properties>
+        <jetty.version>9.0.0.v20130308</jetty.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-jsp</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <scm>
+        <url>https://github.com/uoa-group-applications/composite-jetty</url>
+        <connection>scm:git:git@github.com:uoa-group-applications/composite-jetty.git</connection>
+        <developerConnection>scm:git:git@github.com:uoa-group-applications/composite-jetty.git</developerConnection>
+    </scm>
+
 </project>
